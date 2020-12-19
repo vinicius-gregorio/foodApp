@@ -6,7 +6,10 @@ const SearchPage = () => {
     const [term, setTerm] = useState('');
     return(
         <View style = {styles.pageContainer}>
-        <SearchBar term = {term} onTermChanged = {(newTerm) => setTerm(newTerm)}/>
+        <SearchBar 
+        term = {term}
+         onTermChanged = {(newTerm) => setTerm(newTerm)}
+         onSubmit = { () => console.log('submit')}/>
         <Text> search page {term}</Text>
         
         </View>
