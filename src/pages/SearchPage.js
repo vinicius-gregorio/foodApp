@@ -6,8 +6,9 @@ const SearchPage = () => {
     const [term, setTerm] = useState('');
     return(
         <View style = {styles.pageContainer}>
-        <SearchBar term = {term} onTermChange = {(newTerm) => setTerm(newTerm)}/>
-        <Text> search page</Text>
+        <SearchBar term = {term} onTermChanged = {(newTerm) => setTerm(newTerm)}/>
+        <Text> search page {term}</Text>
+        
         </View>
     );
 }
