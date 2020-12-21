@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiKey from '../../keys/YelpApiKey';
+
 
 // const apiKey = process.env.REACT_APP_YELP_API_KEY;
 //const yelpApiKey = apiKey;
